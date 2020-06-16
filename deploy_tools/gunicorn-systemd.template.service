@@ -7,7 +7,7 @@ User=luke
 WorkingDirectory=/home/luke/sites/SITENAME/source
 ExecStart=/home/luke/sites/SITENAME/virtualenv/bin/gunicorn \
     --bind unix:/tmp/SITENAME.socket \
-    superlist.wsgi:application
+    superlists.wsgi:application
 
 [Install]
 WantedBy=multi-user.target
